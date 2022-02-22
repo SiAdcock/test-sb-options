@@ -6,10 +6,12 @@ import { Button } from "./Button"
 export default {
   title: "Example/Button",
   component: Button,
+  args: {
+    label: "string",
+  },
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     label: {
-      defaultValue: "string",
       options: ["string", "jsx"],
       mapping: {
         string: "Option 1",
